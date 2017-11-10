@@ -19,19 +19,8 @@ setLicense() {
   echo ""
 }
 
-setLicense "views"
-setLicense "sqale"
-setLicense "devcockpit"
-setLicense "report"
-setLicense "cobol"
-setLicense "cpp"
-setLicense "plsql"
-setLicense "abap"
-setLicense "objc"
-setLicense "vb"
-setLicense "swift"
-setLicense "rpg"
-setLicense "vbnet"
-setLicense "pli"
-setLicense "governance"
-setLicense "tsql"
+licenselist="views sqale devcockpit report governance abap cpp cobol objc plsql pli rpg swift vbnet vb tsql"
+for lic in $licenselist
+do
+   setLicense $lic
+done
